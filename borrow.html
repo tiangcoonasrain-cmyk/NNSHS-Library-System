@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Borrow Book | NNSHS Library Management System</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f4f8d5d91.js"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/borrow.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container nav-container">
+
+        <a href="index.html"
+           class="logo">
+
+            <img src="assets/logo.png"
+                 alt="NNSHS Logo">
+
+            <div>
+
+                <h2>NNSHS Library</h2>
+
+                <span>Management System</span>
+
+            </div>
+
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="books.html">Books</a></li>
+
+                <li><a href="borrow.html"
+                       class="active">Borrow</a></li>
+
+                <li><a href="entry.html">Library Entry</a></li>
+
+                <li><a href="research.html">Research</a></li>
+
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+
+            </ul>
+
+        </nav>
+
+        <button class="menu-btn"
+                id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==========================
+     PAGE HERO
+========================== -->
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <h1>
+
+            Borrow a Book
+
+        </h1>
+
+        <p>
+
+            Fill out the form below to request a book from the
+            NNSHS Library.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================
+     BORROW FORM
+========================== -->
+
+<section class="borrow-section">
+
+    <div class="container">
+
+        <div class="borrow-wrapper">
+
+            <form id="borrowForm">
+
+                <h2>
+
+                    Borrow Request Form
+
+                </h2>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Student Name
+
+                    </label>
+
+                    <input type="text"
+                           id="studentName"
+                           required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Student Number
+
+                    </label>
+
+                    <input type="text"
+                           id="studentNumber"
+                           required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Grade & Section
+
+                    </label>
+
+                    <input type="text"
+                           id="gradeSection"
+                           required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Book Title
+
+                    </label>
+
+                    <input type="text"
+                           id="bookTitle"
+                           required>
+
+                </div>
+                                <div class="form-group">
+
+                    <label>
+
+                        Author
+
+                    </label>
+
+                    <input type="text"
+                           id="bookAuthor"
+                           required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Date Borrowed
+
+                    </label>
+
+                    <input type="date"
+                           id="borrowDate"
+                           required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Expected Return Date
+
+                    </label>
+
+                    <input type="date"
+                           id="returnDate"
+                           required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Purpose
+
+                    </label>
+
+                    <textarea id="purpose"
+                              rows="4"
+                              placeholder="Why do you need this book?"
+                              required></textarea>
+
+                </div>
+
+                <button type="submit"
+                        class="btn-primary">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    Submit Borrow Request
+
+                </button>
+
+            </form>
+
+
+
+            <!-- ==========================
+                 BORROW GUIDELINES
+            ========================== -->
+
+            <div class="borrow-info">
+
+                <h2>
+
+                    Borrowing Guidelines
+
+                </h2>
+
+                <ul>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Return books on or before the due date.
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Handle all library materials carefully.
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Lost or damaged books must be replaced.
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Present your school ID when claiming books.
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Wait for approval from the librarian before
+                        receiving your requested book.
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- NEXT:
+     PART 3 STARTS WITH
+     FOOTER + JAVASCRIPT + CLOSING TAGS
+-->
+  <!-- ==========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <div class="footer-logo">
+
+                    <img src="assets/logo.png"
+                         alt="NNSHS Logo">
+
+                    <div>
+
+                        <h3>NNSHS Library</h3>
+
+                        <p>Management System</p>
+
+                    </div>
+
+                </div>
+
+                <p>
+
+                    Empowering students through knowledge,
+                    innovation, and accessible learning resources.
+
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="books.html">Books</a></li>
+
+                    <li><a href="borrow.html">Borrow</a></li>
+
+                    <li><a href="entry.html">Library Entry</a></li>
+
+                    <li><a href="research.html">Research</a></li>
+
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Library Hours</h3>
+
+                <ul>
+
+                    <li>Monday - Friday</li>
+
+                    <li>7:00 AM - 5:00 PM</li>
+
+                    <li>Closed on Holidays</li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <ul>
+
+                    <li>Navotas National Science High School</li>
+
+                    <li>Navotas City</li>
+
+                    <li>library@nnshs.edu.ph</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Navotas National Science High School
+                Library Management System.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================
+     JAVASCRIPT
+========================== -->
+
+<script src="js/borrow.js"></script>
+
+</body>
+
+</html>
