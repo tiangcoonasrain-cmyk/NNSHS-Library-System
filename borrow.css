@@ -1,0 +1,331 @@
+/* ==========================================
+   NNSHS LIBRARY MANAGEMENT SYSTEM
+   borrow.css
+========================================== */
+
+/* ===============================
+   BORROW SECTION
+================================ */
+
+.borrow-section{
+
+    padding:80px 0;
+
+    background:#f7f9f8;
+
+}
+
+.borrow-wrapper{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:40px;
+
+    align-items:start;
+
+}
+
+
+
+/* ===============================
+   BORROW FORM
+================================ */
+
+#borrowForm{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+#borrowForm h2{
+
+    color:var(--primary);
+
+    margin-bottom:30px;
+
+}
+
+.form-group{
+
+    margin-bottom:22px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+}
+
+.form-group input,
+
+.form-group textarea,
+
+.form-group select{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:2px solid #e6e6e6;
+
+    border-radius:12px;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    resize:vertical;
+
+}
+
+.form-group input:focus,
+
+.form-group textarea:focus,
+
+.form-group select:focus{
+
+    outline:none;
+
+    border-color:var(--secondary);
+
+}
+
+#borrowForm .btn-primary{
+
+    width:100%;
+
+    justify-content:center;
+
+    margin-top:10px;
+
+}
+
+
+
+/* ===============================
+   BORROW INFO
+================================ */
+
+.borrow-info{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    position:sticky;
+
+    top:120px;
+
+}
+
+.borrow-info h2{
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+}
+
+.borrow-info ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.borrow-info li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    color:var(--gray);
+
+    line-height:1.7;
+
+}
+
+.borrow-info i{
+
+    color:var(--accent);
+
+    margin-top:3px;
+
+}
+/* ===============================
+   FORM VALIDATION
+================================ */
+
+.form-group input:invalid,
+
+.form-group textarea:invalid{
+
+    border-color:#e5e7eb;
+
+}
+
+.form-group input:valid,
+
+.form-group textarea:valid{
+
+    border-color:#4CAF50;
+
+}
+
+.form-group input::placeholder,
+
+.form-group textarea::placeholder{
+
+    color:#9ca3af;
+
+}
+
+
+
+/* ===============================
+   BUTTON EFFECTS
+================================ */
+
+#borrowForm .btn-primary{
+
+    transition:.3s;
+
+}
+
+#borrowForm .btn-primary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+#borrowForm .btn-primary:active{
+
+    transform:scale(.98);
+
+}
+
+
+
+/* ===============================
+   SUCCESS MESSAGE
+================================ */
+
+.success-message{
+
+    display:none;
+
+    margin-top:25px;
+
+    padding:16px 20px;
+
+    background:#e8f8ee;
+
+    color:#1d7a41;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    text-align:center;
+
+}
+
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width:992px){
+
+    .borrow-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .borrow-info{
+
+        position:static;
+
+    }
+
+}
+
+
+
+@media (max-width:768px){
+
+    #borrowForm,
+
+    .borrow-info{
+
+        padding:28px;
+
+    }
+
+}
+
+
+
+@media (max-width:576px){
+
+    .borrow-section{
+
+        padding:60px 0;
+
+    }
+
+    #borrowForm,
+
+    .borrow-info{
+
+        padding:22px;
+
+    }
+
+    #borrowForm h2,
+
+    .borrow-info h2{
+
+        font-size:26px;
+
+    }
+
+    .form-group input,
+
+    .form-group textarea,
+
+    .form-group select{
+
+        padding:14px 16px;
+
+    }
+
+}
