@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Library Entry | NNSHS Library Management System</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f4f8d5d91.js"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/entry.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container nav-container">
+
+        <a href="index.html"
+           class="logo">
+
+            <img src="assets/logo.png"
+                 alt="NNSHS Logo">
+
+            <div>
+
+                <h2>NNSHS Library</h2>
+
+                <span>Management System</span>
+
+            </div>
+
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="books.html">Books</a></li>
+
+                <li><a href="borrow.html">Borrow</a></li>
+
+                <li><a href="entry.html"
+                       class="active">Library Entry</a></li>
+
+                <li><a href="research.html">Research</a></li>
+
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+
+            </ul>
+
+        </nav>
+
+        <button class="menu-btn"
+                id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==========================
+     PAGE HERO
+========================== -->
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <h1>
+
+            Library Entry Log
+
+        </h1>
+
+        <p>
+
+            Record every student's visit to the
+            NNSHS Library quickly and efficiently.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================
+     ENTRY FORM
+========================== -->
+
+<section class="entry-section">
+
+    <div class="container">
+
+        <div class="entry-wrapper">
+
+            <form id="entryForm">
+
+                <h2>
+
+                    Student Library Entry
+
+                </h2>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Student Name
+
+                    </label>
+
+                    <input type="text"
+                           id="studentName"
+                           required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Student Number
+
+                    </label>
+
+                    <input type="text"
+                           id="studentNumber"
+                           required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Grade & Section
+
+                    </label>
+
+                    <input type="text"
+                           id="gradeSection"
+                           required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Purpose of Visit
+
+                    </label>
+
+                    <select id="purpose"
+                            required>
+
+                        <option value="">
+
+                            Select Purpose
+
+                        </option>
+
+                        <option>Study</option>
+
+                        <option>Borrow Book</option>
+
+                        <option>Return Book</option>
+
+                        <option>Research</option>
+
+                        <option>Reading</option>
+
+                        <option>Others</option>
+
+                    </select>
+
+                </div>
+                                <div class="form-group">
+
+                    <label>
+
+                        Time In
+
+                    </label>
+
+                    <input type="time"
+                           id="timeIn"
+                           required>
+
+                </div>
+
+                <button type="submit"
+                        class="btn-primary">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Record Entry
+
+                </button>
+
+            </form>
+
+
+
+            <!-- ==========================
+                 TODAY'S ENTRY SUMMARY
+            ========================== -->
+
+            <div class="entry-info">
+
+                <h2>
+
+                    Today's Library Entry
+
+                </h2>
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <h3 id="totalEntries">
+
+                        0
+
+                    </h3>
+
+                    <p>
+
+                        Total Entries Today
+
+                    </p>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-book-open-reader"></i>
+
+                    <h3 id="currentlyInside">
+
+                        0
+
+                    </h3>
+
+                    <p>
+
+                        Currently Inside Library
+
+                    </p>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <h3 id="lastEntry">
+
+                        --
+
+                    </h3>
+
+                    <p>
+
+                        Last Recorded Entry
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================
+     RECENT ENTRIES
+========================== -->
+
+<section class="entry-table-section">
+
+    <div class="container">
+
+        <h2>
+
+            Recent Library Entries
+
+        </h2>
+
+        <div class="table-wrapper">
+
+            <table id="entryTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Name</th>
+
+                        <th>Student No.</th>
+
+                        <th>Grade & Section</th>
+
+                        <th>Purpose</th>
+
+                        <th>Time In</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <!-- JavaScript will insert rows here -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- NEXT:
+     PART 3 STARTS WITH
+     FOOTER + JAVASCRIPT + CLOSING TAGS
+-->
+  <!-- ==========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <div class="footer-logo">
+
+                    <img src="assets/logo.png"
+                         alt="NNSHS Logo">
+
+                    <div>
+
+                        <h3>NNSHS Library</h3>
+
+                        <p>Management System</p>
+
+                    </div>
+
+                </div>
+
+                <p>
+
+                    Providing an organized, efficient, and modern
+                    library experience for every NNSHS student.
+
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="books.html">Books</a></li>
+
+                    <li><a href="borrow.html">Borrow</a></li>
+
+                    <li><a href="entry.html">Library Entry</a></li>
+
+                    <li><a href="research.html">Research</a></li>
+
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Library Hours</h3>
+
+                <ul>
+
+                    <li>Monday - Friday</li>
+
+                    <li>7:00 AM - 5:00 PM</li>
+
+                    <li>Closed on Holidays</li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <ul>
+
+                    <li>Navotas National Science High School</li>
+
+                    <li>Navotas City</li>
+
+                    <li>library@nnshs.edu.ph</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Navotas National Science High School
+                Library Management System.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================
+     JAVASCRIPT
+========================== -->
+
+<script src="js/entry.js"></script>
+
+</body>
+
+</html>
