@@ -1,0 +1,343 @@
+/* ==========================================
+   NNSHS LIBRARY MANAGEMENT SYSTEM
+   entry.css
+========================================== */
+
+/* ===============================
+   ENTRY SECTION
+================================ */
+
+.entry-section{
+
+    padding:80px 0;
+
+    background:#f7f9f8;
+
+}
+
+.entry-wrapper{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:40px;
+
+    align-items:start;
+
+}
+
+
+
+/* ===============================
+   ENTRY FORM
+================================ */
+
+#entryForm{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+#entryForm h2{
+
+    color:var(--primary);
+
+    margin-bottom:30px;
+
+}
+
+.form-group{
+
+    margin-bottom:22px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+}
+
+.form-group input,
+
+.form-group select{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:2px solid #e6e6e6;
+
+    border-radius:12px;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus{
+
+    outline:none;
+
+    border-color:var(--secondary);
+
+}
+
+#entryForm .btn-primary{
+
+    width:100%;
+
+    justify-content:center;
+
+    margin-top:10px;
+
+}
+
+
+
+/* ===============================
+   ENTRY SUMMARY
+================================ */
+
+.entry-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.summary-card{
+
+    background:white;
+
+    padding:28px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.summary-card i{
+
+    font-size:38px;
+
+    color:var(--secondary);
+
+    margin-bottom:15px;
+
+}
+
+.summary-card h3{
+
+    font-size:34px;
+
+    color:var(--primary);
+
+    margin-bottom:8px;
+
+}
+
+.summary-card p{
+
+    color:var(--gray);
+
+}
+/* ===============================
+   ENTRY TABLE
+================================ */
+
+.entry-table-section{
+
+    background:white;
+
+    padding:80px 0;
+
+}
+
+.entry-table-section h2{
+
+    color:var(--primary);
+
+    margin-bottom:30px;
+
+}
+
+.table-wrapper{
+
+    overflow-x:auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+thead th{
+
+    padding:18px;
+
+    text-align:left;
+
+    font-weight:600;
+
+}
+
+tbody tr{
+
+    border-bottom:1px solid #ececec;
+
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    background:#f7f9f8;
+
+}
+
+tbody td{
+
+    padding:18px;
+
+    color:var(--text);
+
+}
+
+
+
+/* ===============================
+   SUCCESS MESSAGE
+================================ */
+
+.success-message{
+
+    display:none;
+
+    margin-top:20px;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    background:#e8f8ee;
+
+    color:#1d7a41;
+
+    font-weight:600;
+
+}
+
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width:992px){
+
+    .entry-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+
+@media (max-width:768px){
+
+    #entryForm{
+
+        padding:30px;
+
+    }
+
+    .summary-card{
+
+        padding:24px;
+
+    }
+
+}
+
+
+
+@media (max-width:576px){
+
+    .entry-section,
+
+    .entry-table-section{
+
+        padding:60px 0;
+
+    }
+
+    #entryForm{
+
+        padding:22px;
+
+    }
+
+    #entryForm h2{
+
+        font-size:28px;
+
+    }
+
+    thead th,
+
+    tbody td{
+
+        padding:14px;
+
+        font-size:14px;
+
+    }
+
+}
