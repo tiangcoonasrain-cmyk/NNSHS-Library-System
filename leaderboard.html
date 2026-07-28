@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Leaderboard | NNSHS Library Management System</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f4f8d5d91.js"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/leaderboard.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container nav-container">
+
+        <a href="index.html"
+           class="logo">
+
+            <img src="assets/logo.png"
+                 alt="NNSHS Logo">
+
+            <div>
+
+                <h2>NNSHS Library</h2>
+
+                <span>Management System</span>
+
+            </div>
+
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="books.html">Books</a></li>
+
+                <li><a href="borrow.html">Borrow</a></li>
+
+                <li><a href="entry.html">Library Entry</a></li>
+
+                <li><a href="research.html">Research</a></li>
+
+                <li><a href="leaderboard.html"
+                       class="active">Leaderboard</a></li>
+
+            </ul>
+
+        </nav>
+
+        <button class="menu-btn"
+                id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==========================
+     PAGE HERO
+========================== -->
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <h1>
+
+            Reader Leaderboard
+
+        </h1>
+
+        <p>
+
+            Recognizing the most active readers
+            and library users of NNSHS.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================
+     TOP 3 READERS
+========================== -->
+
+<section class="top-readers">
+
+    <div class="container">
+
+        <div class="top-grid">
+
+            <div class="top-card second">
+
+                <i class="fa-solid fa-medal"></i>
+
+                <img src="assets/users/default.png"
+                     alt="Second Place">
+
+                <h3 id="secondName">
+
+                    Student Name
+
+                </h3>
+
+                <span>
+
+                    🥈 2nd Place
+
+                </span>
+
+                <p id="secondPoints">
+
+                    0 Points
+
+                </p>
+
+            </div>
+
+            <div class="top-card first">
+
+                <i class="fa-solid fa-crown"></i>
+
+                <img src="assets/users/default.png"
+                     alt="Champion">
+
+                <h3 id="firstName">
+
+                    Student Name
+
+                </h3>
+
+                <span>
+
+                    🏆 Champion
+
+                </span>
+
+                <p id="firstPoints">
+
+                    0 Points
+
+                </p>
+
+            </div>
+
+            <div class="top-card third">
+
+                <i class="fa-solid fa-award"></i>
+
+                <img src="assets/users/default.png"
+                     alt="Third Place">
+
+                <h3 id="thirdName">
+
+                    Student Name
+
+                </h3>
+
+                <span>
+
+                    🥉 3rd Place
+
+                </span>
+
+                <p id="thirdPoints">
+
+                    0 Points
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================
+     RANKING TABLE
+========================== -->
+
+<section class="leaderboard-section">
+
+    <div class="container">
+
+        <h2>
+
+            Overall Rankings
+
+        </h2>
+
+        <div class="table-wrapper">
+
+            <table id="leaderboardTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Rank</th>
+
+                        <th>Student</th>
+
+                        <th>Grade & Section</th>
+
+                        <th>Books Borrowed</th>
+
+                        <th>Points</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <!-- JavaScript inserts rows -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+            </div>
+
+</section>
+
+
+
+<!-- ==========================
+     ACHIEVEMENTS
+========================== -->
+
+<section class="achievements">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Library Awards
+
+            </span>
+
+            <h2>
+
+                Reader Achievements
+
+            </h2>
+
+            <p>
+
+                Students can earn badges by actively participating
+                in library activities and borrowing books.
+
+            </p>
+
+        </div>
+
+        <div class="achievement-grid">
+
+            <div class="achievement-card">
+
+                <i class="fa-solid fa-book-open-reader"></i>
+
+                <h3>
+
+                    Bookworm
+
+                </h3>
+
+                <p>
+
+                    Borrow 10 books.
+
+                </p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <i class="fa-solid fa-star"></i>
+
+                <h3>
+
+                    Outstanding Reader
+
+                </h3>
+
+                <p>
+
+                    Earn 500 reading points.
+
+                </p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <i class="fa-solid fa-fire"></i>
+
+                <h3>
+
+                    Reading Streak
+
+                </h3>
+
+                <p>
+
+                    Visit the library for 30 consecutive days.
+
+                </p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <h3>
+
+                    Research Expert
+
+                </h3>
+
+                <p>
+
+                    Complete 20 research visits.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <div class="footer-logo">
+
+                    <img src="assets/logo.png"
+                         alt="NNSHS Logo">
+
+                    <div>
+
+                        <h3>NNSHS Library</h3>
+
+                        <p>Management System</p>
+
+                    </div>
+
+                </div>
+
+                <p>
+
+                    Inspiring students to become lifelong readers
+                    through recognition and achievement.
+
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="books.html">Books</a></li>
+
+                    <li><a href="borrow.html">Borrow</a></li>
+
+                    <li><a href="entry.html">Library Entry</a></li>
+
+                    <li><a href="research.html">Research</a></li>
+
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <ul>
+
+                    <li>Navotas National Science High School</li>
+
+                    <li>Navotas City</li>
+
+                    <li>library@nnshs.edu.ph</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Navotas National Science High School
+                Library Management System.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/leaderboard.js"></script>
+
+</body>
+
+</html>
