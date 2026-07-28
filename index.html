@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NNSHS Library Management System</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6f4f8d5d91.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================
+         HEADER
+    =========================== -->
+
+    <header id="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+
+                <img src="assets/logo.png" alt="NNSHS Logo">
+
+                <div class="logo-text">
+
+                    <h2>NNSHS Library</h2>
+                    <span>Management System</span>
+
+                </div>
+
+            </a>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html" class="active">Home</a></li>
+
+                    <li><a href="books.html">Books</a></li>
+
+                    <li><a href="borrow.html">Borrow</a></li>
+
+                    <li><a href="entry.html">Library Entry</a></li>
+
+                    <li><a href="research.html">Research</a></li>
+
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                </ul>
+
+            </nav>
+
+            <a href="admin.html" class="btn-outline">
+
+                <i class="fa-solid fa-user-shield"></i>
+
+                Admin
+
+            </a>
+
+            <button id="menuBtn" class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==========================
+         HERO SECTION
+    =========================== -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <span class="hero-tag">
+
+                    Welcome to the Official
+
+                    NNSHS Library
+
+                </span>
+
+                <h1>
+
+                    Discover Knowledge,
+
+                    <br>
+
+                    Build Your Future.
+
+                </h1>
+
+                <p>
+
+                    The NNSHS Library Management System provides students and
+                    teachers with an easier way to explore books, borrow
+                    materials, monitor library visits, and access student
+                    research papers through one modern platform.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="books.html" class="btn-primary">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        Browse Books
+
+                    </a>
+
+                    <a href="research.html" class="btn-secondary">
+
+                        <i class="fa-solid fa-flask"></i>
+
+                        Research Repository
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="assets/library-hero.png"
+                    alt="Library Illustration">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+         QUICK STATISTICS
+    =========================== -->
+
+    <section class="statistics">
+
+        <div class="container">
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    <h2 id="bookCount">0</h2>
+
+                    <p>Total Books</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <h2 id="visitorCount">0</h2>
+
+                    <p>Library Visitors</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-handshake"></i>
+
+                    <h2 id="borrowCount">0</h2>
+
+                    <p>Borrowed Books</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-microscope"></i>
+
+                    <h2 id="researchCount">0</h2>
+
+                    <p>Research Papers</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- NEXT:
+         PART 2 STARTS WITH
+         ABOUT THE LIBRARY SECTION
+    -->
+
+      <!-- ==========================
+         ABOUT THE LIBRARY
+    =========================== -->
+
+    <section class="about" id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-image">
+
+                <img src="assets/about-library.jpg"
+                    alt="NNSHS Library">
+
+            </div>
+
+            <div class="about-content">
+
+                <span class="section-tag">
+
+                    About Our Library
+
+                </span>
+
+                <h2>
+
+                    A Learning Space for Every NNSHS Student
+
+                </h2>
+
+                <p>
+
+                    The Navotas National Science High School Library serves as a
+                    center for learning, research, and academic excellence. It
+                    provides students and teachers with quality learning
+                    resources, references, research materials, and a quiet place
+                    for studying.
+
+                </p>
+
+                <p>
+
+                    Through the Library Management System, users can browse
+                    books, borrow materials, monitor library visits, and explore
+                    research papers anytime and anywhere.
+
+                </p>
+
+                <div class="about-features">
+
+                    <div class="feature-box">
+
+                        <i class="fa-solid fa-book-open-reader"></i>
+
+                        <div>
+
+                            <h3>
+
+                                Thousands of Learning Resources
+
+                            </h3>
+
+                            <p>
+
+                                Academic books, references, journals, and
+                                learning materials.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="feature-box">
+
+                        <i class="fa-solid fa-flask"></i>
+
+                        <div>
+
+                            <h3>
+
+                                Student Research Repository
+
+                            </h3>
+
+                            <p>
+
+                                Access approved student research papers and
+                                scientific studies.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="feature-box">
+
+                        <i class="fa-solid fa-computer"></i>
+
+                        <div>
+
+                            <h3>
+
+                                Digital Library Services
+
+                            </h3>
+
+                            <p>
+
+                                Search books, monitor borrowings, and manage
+                                library records through one platform.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+         LIBRARY SERVICES
+    =========================== -->
+
+    <section class="services">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+
+                    Services
+
+                </span>
+
+                <h2>
+
+                    What You Can Do
+
+                </h2>
+
+                <p>
+
+                    Everything you need for your library experience is available
+                    in one place.
+
+                </p>
+
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    <h3>
+
+                        Browse Books
+
+                    </h3>
+
+                    <p>
+
+                        Search and explore library books by title, subject,
+                        author, and grade level.
+
+                    </p>
+
+                    <a href="books.html">
+
+                        Explore Collection
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+
+                    <i class="fa-solid fa-handshake"></i>
+
+                    <h3>
+
+                        Borrow Books
+
+                    </h3>
+
+                    <p>
+
+                        Record book borrowings and monitor return dates easily.
+
+                    </p>
+
+                    <a href="borrow.html">
+
+                        Borrow Records
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+
+                    <i class="fa-solid fa-door-open"></i>
+
+                    <h3>
+
+                        Library Entry
+
+                    </h3>
+
+                    <p>
+
+                        Record daily student visits and monitor library
+                        attendance.
+
+                    </p>
+
+                    <a href="entry.html">
+
+                        Visit Library
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+
+                    <i class="fa-solid fa-microscope"></i>
+
+                    <h3>
+
+                        Research Repository
+
+                    </h3>
+
+                    <p>
+
+                        Browse research papers submitted by NNSHS students.
+
+                    </p>
+
+                    <a href="research.html">
+
+                        View Research
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                    <h3>
+
+                        Leaderboard
+
+                    </h3>
+
+                    <p>
+
+                        Discover the most active sections participating in
+                        library activities.
+
+                    </p>
+
+                    <a href="leaderboard.html">
+
+                        View Rankings
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <h3>
+
+                        Library Statistics
+
+                    </h3>
+
+                    <p>
+
+                        View real-time library activity, borrowing records,
+                        visitors, and research statistics.
+
+                    </p>
+
+                    <a href="admin.html">
+
+                        Open Dashboard
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- NEXT:
+         PART 3 STARTS WITH
+         FEATURED BOOKS SECTION
+    -->
+
+      <!-- ==========================
+         FEATURED BOOKS
+    =========================== -->
+
+    <section class="featured-books">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+
+                    Featured Collection
+
+                </span>
+
+                <h2>
+
+                    Popular Library Books
+
+                </h2>
+
+                <p>
+
+                    Explore some of the recommended books available in the
+                    NNSHS Library.
+
+                </p>
+
+            </div>
+
+            <div class="books-grid">
+
+                <div class="book-card">
+
+                    <img src="assets/books/science.jpg"
+                        alt="Science Book">
+
+                    <div class="book-content">
+
+                        <span class="book-category">
+
+                            Science
+
+                        </span>
+
+                        <h3>
+
+                            General Biology
+
+                        </h3>
+
+                        <p>
+
+                            Grade 11 Reference Book
+
+                        </p>
+
+                        <a href="books.html" class="book-btn">
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="book-card">
+
+                    <img src="assets/books/english.jpg"
+                        alt="English Book">
+
+                    <div class="book-content">
+
+                        <span class="book-category">
+
+                            English
+
+                        </span>
+
+                        <h3>
+
+                            English Literature
+
+                        </h3>
+
+                        <p>
+
+                            Fiction and Literature Collection
+
+                        </p>
+
+                        <a href="books.html" class="book-btn">
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="book-card">
+
+                    <img src="assets/books/math.jpg"
+                        alt="Math Book">
+
+                    <div class="book-content">
+
+                        <span class="book-category">
+
+                            Mathematics
+
+                        </span>
+
+                        <h3>
+
+                            Advanced Algebra
+
+                        </h3>
+
+                        <p>
+
+                            Grade 10 Mathematics
+
+                        </p>
+
+                        <a href="books.html" class="book-btn">
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="book-card">
+
+                    <img src="assets/books/history.jpg"
+                        alt="History Book">
+
+                    <div class="book-content">
+
+                        <span class="book-category">
+
+                            Social Science
+
+                        </span>
+
+                        <h3>
+
+                            Philippine History
+
+                        </h3>
+
+                        <p>
+
+                            Reference Collection
+
+                        </p>
+
+                        <a href="books.html" class="book-btn">
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+         WHY CHOOSE OUR LIBRARY
+    =========================== -->
+
+    <section class="why-us">
+
+        <div class="container why-grid">
+
+            <div class="why-content">
+
+                <span class="section-tag">
+
+                    Why Choose Us
+
+                </span>
+
+                <h2>
+
+                    More Than Just Books
+
+                </h2>
+
+                <p>
+
+                    The NNSHS Library provides students with resources,
+                    technology, and services that support academic excellence,
+                    research, and lifelong learning.
+
+                </p>
+
+                <ul class="why-list">
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Thousands of academic resources
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Organized borrowing records
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Student research repository
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Digital attendance monitoring
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Weekly participation leaderboard
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Modern web-based library management
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="why-image">
+
+                <img src="assets/library-study.png"
+                    alt="Students Studying">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- NEXT:
+         PART 4 STARTS WITH
+         LIBRARY OFFICERS SECTION
+    -->
+      <!-- ==========================
+         LIBRARY OFFICERS
+    =========================== -->
+
+    <section class="officers">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+
+                    Meet the Team
+
+                </span>
+
+                <h2>
+
+                    NNSHS Library Club Officers
+
+                </h2>
+
+                <p>
+
+                    The Library Club Officers are committed to promoting
+                    reading, research, and academic excellence within the
+                    school community.
+
+                </p>
+
+            </div>
+
+            <div class="officers-grid">
+
+                <div class="officer-card">
+
+                    <img src="assets/officers/president.jpg"
+                        alt="Library President">
+
+                    <h3>
+
+                        Library President
+
+                    </h3>
+
+                    <p>
+
+                        Leads library programs and supervises club activities.
+
+                    </p>
+
+                </div>
+
+                <div class="officer-card">
+
+                    <img src="assets/officers/vice-president.jpg"
+                        alt="Vice President">
+
+                    <h3>
+
+                        Vice President
+
+                    </h3>
+
+                    <p>
+
+                        Assists the president and coordinates library events.
+
+                    </p>
+
+                </div>
+
+                <div class="officer-card">
+
+                    <img src="assets/officers/secretary.jpg"
+                        alt="Secretary">
+
+                    <h3>
+
+                        Secretary
+
+                    </h3>
+
+                    <p>
+
+                        Handles library records, documentation, and reports.
+
+                    </p>
+
+                </div>
+
+                <div class="officer-card">
+
+                    <img src="assets/officers/treasurer.jpg"
+                        alt="Treasurer">
+
+                    <h3>
+
+                        Treasurer
+
+                    </h3>
+
+                    <p>
+
+                        Manages financial records and library resources.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+         CALL TO ACTION
+    =========================== -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <div class="cta-box">
+
+                <h2>
+
+                    Ready to Explore the Library?
+
+                </h2>
+
+                <p>
+
+                    Browse hundreds of books, discover student research,
+                    monitor your library visits, and become one of the most
+                    active readers in NNSHS.
+
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="books.html" class="btn-primary">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        Browse Books
+
+                    </a>
+
+                    <a href="borrow.html" class="btn-secondary">
+
+                        <i class="fa-solid fa-handshake"></i>
+
+                        Borrow a Book
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+         CONTACT
+    =========================== -->
+
+    <section class="contact">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+
+                    Contact Us
+
+                </span>
+
+                <h2>
+
+                    Visit the NNSHS Library
+
+                </h2>
+
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <h3>
+
+                        Address
+
+                    </h3>
+
+                    <p>
+
+                        Navotas National Science High School<br>
+                        Navotas City, Philippines
+
+                    </p>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <h3>
+
+                        Library Hours
+
+                    </h3>
+
+                    <p>
+
+                        Monday – Friday<br>
+                        7:00 AM – 5:00 PM
+
+                    </p>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <h3>
+
+                        Email
+
+                    </h3>
+
+                    <p>
+
+                        library@nnshs.edu.ph
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- NEXT:
+         PART 5 STARTS WITH
+         FOOTER + JAVASCRIPT + CLOSING TAGS
+    -->
+      <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+
+                    <div class="footer-logo">
+
+                        <img src="assets/logo.png"
+                            alt="NNSHS Library Logo">
+
+                        <div>
+
+                            <h3>NNSHS Library</h3>
+                            <p>Management System</p>
+
+                        </div>
+
+                    </div>
+
+                    <p>
+
+                        The NNSHS Library Management System is designed to
+                        provide a modern, organized, and accessible library
+                        experience for every student and teacher of
+                        Navotas National Science High School.
+
+                    </p>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="books.html">Books</a></li>
+
+                        <li><a href="borrow.html">Borrow</a></li>
+
+                        <li><a href="entry.html">Library Entry</a></li>
+
+                        <li><a href="research.html">Research</a></li>
+
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Library Services</h3>
+
+                    <ul>
+
+                        <li>Book Borrowing</li>
+
+                        <li>Research Repository</li>
+
+                        <li>Library Attendance</li>
+
+                        <li>Reading Programs</li>
+
+                        <li>Reference Services</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Follow Us</h3>
+
+                    <div class="social-links">
+
+                        <a href="#">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © 2026 Navotas National Science High School Library Club.
+                    All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==========================
+         JAVASCRIPT
+    =========================== -->
+
+    <script>
+
+        // Mobile Navigation
+
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+
+        // Sample Statistics
+        // Replace with Firebase/localStorage later
+
+        document.getElementById("bookCount").textContent = "1,250";
+        document.getElementById("visitorCount").textContent = "3,482";
+        document.getElementById("borrowCount").textContent = "418";
+        document.getElementById("researchCount").textContent = "176";
+
+    </script>
+
+</body>
+
+</html>
