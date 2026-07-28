@@ -1,0 +1,153 @@
+// ==========================================
+// NNSHS LIBRARY MANAGEMENT SYSTEM
+// research.js
+// ==========================================
+
+const searchInput =
+    document.getElementById("researchSearch");
+
+const categoryFilter =
+    document.getElementById("strandFilter");
+
+const researchCards =
+    document.querySelectorAll(".research-card");
+
+
+
+/* ===============================
+   SEARCH FUNCTION
+=============================== */
+
+function filterResearch(){
+
+    const searchText =
+        searchInput.value.toLowerCase();
+
+    const selectedCategory =
+        categoryFilter.value;
+
+    researchCards.forEach(card => {
+
+        const title =
+
+            card.querySelector("h3")
+                .textContent
+                .toLowerCase();
+
+        const author =
+
+            card.querySelector(".research-author")
+                .textContent
+                .toLowerCase();
+
+        const description =
+
+            card.querySelector(".research-description")
+                .textContent
+                .toLowerCase();
+
+        const category =
+
+            card.dataset.category;
+
+        const matchesSearch =
+
+            title.includes(searchText) ||
+
+            author.includes(searchText) ||
+
+            description.includes(searchText);
+
+        const matchesCategory =
+
+            selectedCategory === "all" ||
+
+            category === selectedCategory;
+
+        if(
+
+            matchesSearch &&
+
+            matchesCategory
+
+        ){
+
+            card.style.display = "block";
+
+        }
+
+        else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+/* ===============================
+   EVENT LISTENERS
+=============================== */
+
+searchInput.addEventListener(
+
+    "input",
+
+    filterResearch
+
+);
+
+categoryFilter.addEventListener(
+
+    "change",
+
+    filterResearch
+
+);
+
+
+
+/* ===============================
+   PAGE INITIALIZATION
+=============================== */
+
+window.addEventListener(
+
+    "load",
+
+    () => {
+
+        filterResearch();
+
+    }
+
+);
+
+
+
+/* ===============================
+   FIREBASE READY
+=============================== */
+
+/*
+Future Firebase Integration:
+
+import {
+    initializeApp
+} from "firebase/app";
+
+import {
+    getFirestore,
+    collection,
+    getDocs
+} from "firebase/firestore";
+
+Load research records from Firestore
+instead of hard-coded HTML cards.
+*/
+
+
+
+/* ===============================
+   END OF FILE
+=============================== */
