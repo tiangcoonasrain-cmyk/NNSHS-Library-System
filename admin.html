@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | NNSHS Library Management System</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/6f4f8d5d91.js"
+            crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/admin.css">
+
+</head>
+
+<body>
+
+<div class="admin-layout">
+
+    <!-- ==========================
+         SIDEBAR
+    =========================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img src="assets/logo.png"
+                 alt="NNSHS Logo">
+
+            <div>
+
+                <h2>NNSHS Library</h2>
+
+                <span>Admin Panel</span>
+
+            </div>
+
+        </div>
+
+        <ul class="sidebar-menu">
+
+            <li class="active">
+
+                <a href="#dashboard">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#books">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    Books
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#borrow">
+
+                    <i class="fa-solid fa-book-open-reader"></i>
+
+                    Borrow Requests
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#entries">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Library Entries
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#research">
+
+                    <i class="fa-solid fa-flask"></i>
+
+                    Research
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#leaderboard">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                    Leaderboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    Settings
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+
+    <!-- ==========================
+         MAIN CONTENT
+    =========================== -->
+
+    <main class="admin-main">
+
+        <header class="admin-header">
+
+            <div>
+
+                <h1>
+
+                    Dashboard
+
+                </h1>
+
+                <p>
+
+                    Welcome back, Librarian.
+
+                </p>
+
+            </div>
+
+            <div class="admin-user">
+
+                <img src="assets/users/admin.jpg"
+                     alt="Admin">
+
+                <span>
+
+                    Administrator
+
+                </span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ==========================
+             DASHBOARD CARDS
+        =========================== -->
+
+        <section class="dashboard-cards">
+
+            <div class="dashboard-card">
+
+                <i class="fa-solid fa-book"></i>
+
+                <h2 id="totalBooks">
+
+                    1250
+
+                </h2>
+
+                <p>
+
+                    Total Books
+
+                </p>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <h2 id="borrowedBooks">
+
+                    418
+
+                </h2>
+
+                <p>
+
+                    Borrowed Books
+
+                </p>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h2 id="libraryVisitors">
+
+                    3482
+
+                </h2>
+
+                <p>
+
+                    Library Visitors
+
+                </p>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <h2 id="researchCount">
+
+                    176
+
+                </h2>
+
+                <p>
+
+                    Research Papers
+
+                </p>
+
+            </div>
+
+        </section>
+                <!-- ==========================
+             BOOK MANAGEMENT
+        =========================== -->
+
+        <section id="books"
+                 class="admin-section">
+
+            <div class="section-header">
+
+                <h2>
+
+                    Book Management
+
+                </h2>
+
+                <button class="btn-primary">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Book
+
+                </button>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Book ID</th>
+
+                            <th>Title</th>
+
+                            <th>Author</th>
+
+                            <th>Category</th>
+
+                            <th>Status</th>
+
+                            <th>Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>B001</td>
+
+                            <td>General Biology</td>
+
+                            <td>Campbell</td>
+
+                            <td>Science</td>
+
+                            <td>
+
+                                <span class="status available">
+
+                                    Available
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button class="action-btn edit">
+
+                                    <i class="fa-solid fa-pen"></i>
+
+                                </button>
+
+                                <button class="action-btn delete">
+
+                                    <i class="fa-solid fa-trash"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>B002</td>
+
+                            <td>Noli Me Tangere</td>
+
+                            <td>Jose Rizal</td>
+
+                            <td>Filipino</td>
+
+                            <td>
+
+                                <span class="status borrowed">
+
+                                    Borrowed
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button class="action-btn edit">
+
+                                    <i class="fa-solid fa-pen"></i>
+
+                                </button>
+
+                                <button class="action-btn delete">
+
+                                    <i class="fa-solid fa-trash"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================
+             RECENT ACTIVITY
+        =========================== -->
+
+        <section class="admin-section">
+
+            <div class="section-header">
+
+                <h2>
+
+                    Recent Activity
+
+                </h2>
+
+            </div>
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    <div>
+
+                        <h4>
+
+                            Book Borrowed
+
+                        </h4>
+
+                        <p>
+
+                            Juan Dela Cruz borrowed
+                            <strong>General Biology</strong>.
+
+                        </p>
+
+                    </div>
+
+                    <span>
+
+                        5 mins ago
+
+                    </span>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    <div>
+
+                        <h4>
+
+                            New Library Entry
+
+                        </h4>
+
+                        <p>
+
+                            Maria Santos entered the library.
+
+                        </p>
+
+                    </div>
+
+                    <span>
+
+                        12 mins ago
+
+                    </span>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <i class="fa-solid fa-file-circle-plus"></i>
+
+                    <div>
+
+                        <h4>
+
+                            Research Uploaded
+
+                        </h4>
+
+                        <p>
+
+                            A new STEM research paper has been added.
+
+                        </p>
+
+                    </div>
+
+                    <span>
+
+                        1 hour ago
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- ==========================
+             BORROW REQUESTS
+        =========================== -->
+
+        <section id="borrow"
+                 class="admin-section">
+
+            <div class="section-header">
+
+                <h2>Borrow Requests</h2>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Student</th>
+                            <th>Book</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Juan Dela Cruz</td>
+
+                            <td>General Biology</td>
+
+                            <td>July 28, 2026</td>
+
+                            <td>
+
+                                <span class="status pending">
+
+                                    Pending
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button class="action-btn edit">
+
+                                    Approve
+
+                                </button>
+
+                                <button class="action-btn delete">
+
+                                    Reject
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================
+             LIBRARY ENTRIES
+        =========================== -->
+
+        <section id="entries"
+                 class="admin-section">
+
+            <div class="section-header">
+
+                <h2>Today's Library Entries</h2>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Name</th>
+                            <th>Grade & Section</th>
+                            <th>Purpose</th>
+                            <th>Time In</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Maria Santos</td>
+
+                            <td>10-Einstein</td>
+
+                            <td>Reading</td>
+
+                            <td>8:15 AM</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================
+             SETTINGS
+        =========================== -->
+
+        <section id="settings"
+                 class="admin-section">
+
+            <div class="section-header">
+
+                <h2>Settings</h2>
+
+            </div>
+
+            <div class="settings-card">
+
+                <button class="btn-primary">
+
+                    Change Password
+
+                </button>
+
+                <button class="btn-primary">
+
+                    Manage Librarians
+
+                </button>
+
+                <button class="btn-primary">
+
+                    Export Records
+
+                </button>
+
+                <button class="btn-primary">
+
+                    Backup Database
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>
