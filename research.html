@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Research Repository | NNSHS Library Management System</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f4f8d5d91.js"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/research.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container nav-container">
+
+        <a href="index.html"
+           class="logo">
+
+            <img src="assets/logo.png"
+                 alt="NNSHS Logo">
+
+            <div>
+
+                <h2>NNSHS Library</h2>
+
+                <span>Management System</span>
+
+            </div>
+
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="books.html">Books</a></li>
+
+                <li><a href="borrow.html">Borrow</a></li>
+
+                <li><a href="entry.html">Library Entry</a></li>
+
+                <li><a href="research.html"
+                       class="active">Research</a></li>
+
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+
+            </ul>
+
+        </nav>
+
+        <button class="menu-btn"
+                id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==========================
+     PAGE HERO
+========================== -->
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <h1>
+
+            Research Repository
+
+        </h1>
+
+        <p>
+
+            Browse research papers, capstone projects,
+            and scientific studies submitted by
+            Navotas National Science High School students.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================
+     SEARCH & FILTER
+========================== -->
+
+<section class="research-controls">
+
+    <div class="container">
+
+        <div class="controls">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text"
+                       id="researchSearch"
+                       placeholder="Search title, author, or keyword...">
+
+            </div>
+
+            <select id="strandFilter">
+
+                <option value="all">
+
+                    All Categories
+
+                </option>
+
+                <option value="STEM">
+
+                    STEM
+
+                </option>
+
+                <option value="ABM">
+
+                    ABM
+
+                </option>
+
+                <option value="HUMSS">
+
+                    HUMSS
+
+                </option>
+
+                <option value="TVL">
+
+                    TVL
+
+                </option>
+
+                <option value="JHS">
+
+                    Junior High
+
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================
+     RESEARCH GRID
+========================== -->
+
+<section class="research-section">
+
+    <div class="container">
+
+        <div class="research-grid"
+             id="researchGrid">
+                      <!-- ==========================
+                 RESEARCH CARD 1
+            ========================== -->
+
+            <div class="research-card"
+                 data-category="STEM">
+
+                <img src="assets/research/research1.jpg"
+                     alt="Research Cover">
+
+                <div class="research-content">
+
+                    <span class="research-category">
+
+                        STEM
+
+                    </span>
+
+                    <h3>
+
+                        AI-Based Harmful Algal Bloom Detection Using IoT Sensors
+
+                    </h3>
+
+                    <p class="research-author">
+
+                        By: Rain et al.
+
+                    </p>
+
+                    <p class="research-description">
+
+                        An IoT-powered buoy system that monitors
+                        pH, dissolved oxygen, temperature, and
+                        turbidity to detect favorable conditions
+                        for Harmful Algal Blooms.
+
+                    </p>
+
+                    <a href="#"
+                       class="btn-primary research-btn">
+
+                        <i class="fa-solid fa-file-pdf"></i>
+
+                        View Research
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==========================
+                 RESEARCH CARD 2
+            ========================== -->
+
+            <div class="research-card"
+                 data-category="JHS">
+
+                <img src="assets/research/research2.jpg"
+                     alt="Research Cover">
+
+                <div class="research-content">
+
+                    <span class="research-category">
+
+                        Junior High
+
+                    </span>
+
+                    <h3>
+
+                        Effectiveness of Water Lettuce Cellulose Aerogel
+                        for Oil Spill Remediation
+
+                    </h3>
+
+                    <p class="research-author">
+
+                        By: NNSHS Researchers
+
+                    </p>
+
+                    <p class="research-description">
+
+                        A study on converting water lettuce into
+                        cellulose aerogel mats capable of
+                        adsorbing oil from contaminated water.
+
+                    </p>
+
+                    <a href="#"
+                       class="btn-primary research-btn">
+
+                        <i class="fa-solid fa-file-pdf"></i>
+
+                        View Research
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==========================
+                 RESEARCH CARD 3
+            ========================== -->
+
+            <div class="research-card"
+                 data-category="STEM">
+
+                <img src="assets/research/research3.jpg"
+                     alt="Research Cover">
+
+                <div class="research-content">
+
+                    <span class="research-category">
+
+                        STEM
+
+                    </span>
+
+                    <h3>
+
+                        Smart Water Quality Monitoring System
+
+                    </h3>
+
+                    <p class="research-author">
+
+                        By: Grade 10 STEM Students
+
+                    </p>
+
+                    <p class="research-description">
+
+                        Development of a real-time water quality
+                        monitoring device using multiple sensors
+                        and cloud-based data storage.
+
+                    </p>
+
+                    <a href="#"
+                       class="btn-primary research-btn">
+
+                        <i class="fa-solid fa-file-pdf"></i>
+
+                        View Research
+
+                    </a>
+
+                </div>
+
+            </div>
+                        <!-- ==========================
+                 RESEARCH CARD 4
+            ========================== -->
+
+            <div class="research-card"
+                 data-category="ABM">
+
+                <img src="assets/research/research4.jpg"
+                     alt="Research Cover">
+
+                <div class="research-content">
+
+                    <span class="research-category">
+
+                        ABM
+
+                    </span>
+
+                    <h3>
+
+                        Financial Literacy Among Senior High School Students
+
+                    </h3>
+
+                    <p class="research-author">
+
+                        By: ABM Researchers
+
+                    </p>
+
+                    <p class="research-description">
+
+                        A study on budgeting habits, saving practices,
+                        and financial awareness of senior high school
+                        students.
+
+                    </p>
+
+                    <a href="#"
+                       class="btn-primary research-btn">
+
+                        <i class="fa-solid fa-file-pdf"></i>
+
+                        View Research
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <div class="footer-logo">
+
+                    <img src="assets/logo.png"
+                         alt="NNSHS Logo">
+
+                    <div>
+
+                        <h3>NNSHS Library</h3>
+
+                        <p>Management System</p>
+
+                    </div>
+
+                </div>
+
+                <p>
+
+                    Empowering research, innovation,
+                    and lifelong learning at
+                    Navotas National Science High School.
+
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="borrow.html">Borrow</a></li>
+                    <li><a href="entry.html">Library Entry</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <ul>
+
+                    <li>Navotas National Science High School</li>
+                    <li>Navotas City</li>
+                    <li>library@nnshs.edu.ph</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Navotas National Science High School
+                Library Management System.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/research.js"></script>
+
+</body>
+
+</html>
